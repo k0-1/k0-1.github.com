@@ -3,6 +3,7 @@
 permalink: /:categories/:year/:month/:day/:title 
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+markdown: kramdown
 highlighter: pygments
 
 # Themes are encouraged to use these universal variables 
@@ -10,10 +11,10 @@ highlighter: pygments
 #
 title : メモ
 tagline: Site Tagline
-author : koichi
+author : 
 name : k0-1
 #  email : blah@email.test
-#  github : username
+  github : k0-1
 #  twitter : username
 #  feedburner : feedname
 
