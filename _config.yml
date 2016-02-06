@@ -4,12 +4,12 @@
 # url: http://localhost:4000
 # baseurl: ""
 url: http://qckanemoto.github.io
-baseurl: /k0-1.github.io/
-title: koichi
-description: Some descriptions of yourself.
+baseurl: ""
+title: memo
+description: 
 avatar: /assets/img/ogp.png
-# language: ja
-language: en
+language: ja
+# language: en
 
 #
 # Icons
@@ -17,9 +17,9 @@ language: en
 icons:
   rss: true
   email:
-  github: qckanemoto
+  github: 
   bitbucket:
-  twitter: qckanemoto
+  twitter: 
   facebook:
   google_plus:
   tumblr:
@@ -86,6 +86,7 @@ ogp:
 #
 gems:
   - jemoji
+  - jekyll-paginate
 
 #
 # Styles: see "_sass/base/_variables.scss"
@@ -97,9 +98,10 @@ gems:
 
 include: ["_pages"]
 
-markdown: redcarpet
-redcarpet:
-  extensions: ["autolink", "fenced_code_blocks", "strikethrough", "superscript", "with_toc_data", "tables", "footnotes", "no_intra_emphasis"]
+#markdown: redcarpet
+markdown: kramdown
+#redcarpet:
+#  extensions: ["autolink", "fenced_code_blocks", "strikethrough", "superscript", "with_toc_data", "tables", "footnotes", "no_intra_emphasis"]
 highlighter: pygments
 
 excerpt_separator: <!--more-->

@@ -46,7 +46,24 @@
     <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet">
 
     <link href="{{ '/assets/css/style.css' | prepend: site.baseurl }}" rel="stylesheet">
-</head>
+	<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	TeX: {
+	  equationNumbers: {
+		autoNumber: "AMS"
+	  }
+	},
+	tex2jax: {
+	  inlineMath: [ ['$','$'], ['\(', '\)'] ],
+	  displayMath: [ ['$$','$$'] ],
+	  processEscapes: true,
+	}
+  });
+	</script>
+	<script type="text/javascript"
+		 src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+	</head>
 <body>
 
 <header class="site-header">
@@ -62,7 +79,25 @@
         </h1>
     </div>
 </header>
-
+$\newcommand{\R}{\mathbb{R}}$
+$\newcommand{\C}{\mathbb{C}}$
+$\newcommand{\rank}{\operatorname{rank}}$
+$\newcommand{\N}{\mathbb{N}}$
+$\newcommand{\Z}{\mathbb{Z}}$
+$\newcommand{\K}{\mathbb{K}}$
+$\newcommand{\Ha}{\mathbb{H}}$
+$\newcommand{\act}{\curvearrowright}$
+$\newcommand{\mfp}{\frak{p}}$
+$\newcommand{\Herm}{\operatorname{Herm}}$
+$\newcommand{\Alt}{\operatorname{Alt}}$
+$\newcommand{\Sym}{\operatorname{Sym}}$
+$\newcommand{\trace}{\operatorname{trace}}$
+$\newcommand{\Ad}{\operatorname{Ad}}$
+$\newcommand{\ad}{\operatorname{ad}}$
+$\newcommand{\diag}{\operatorname{diag}}$
+$\newcommand{\Pf}{\operatorname{Pf}}$
+$\newcommand{\Lie}{\operatorname{Lie}}$
+$\renewcommand{\labelenumi}{(\roman{enumi})}$
 <div class="site-container">
     <div class="site-content">
         {{ content }}
